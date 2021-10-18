@@ -29,7 +29,12 @@ function step(timestamp){
 }
 
 window.addEventListener('keydown', moveCharacter) 
+window.addEventListener('keyup', stopCharacter) 
 
+function stopCharacter() {
+    xPlus= 0 
+    yPlus = 0
+}
 
 function moveCharacter(e) {
     if (e.key === 'ArrowRight') {
